@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDE3514E-4EC4-40C9-8978-24E8741FC2A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Capa_de_Vistas.My.MyApplication</StartupObject>
+    <RootNamespace>Capa_de_Vistas</RootNamespace>
+    <AssemblyName>Capa de Vistas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Capa de Vistas/</UpdateUrl>
+    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Capa de Vistas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Capa de Vistas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4B86A971073510F6A05B1DC97AC023335AD9B50A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Capa de Vistas_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo_completo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Capa de Dominio">
+      <HintPath>..\Capa de Dominio\obj\Debug\Capa de Dominio.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa de Seguridad">
+      <HintPath>..\Capa de Seguridad\obj\Debug\Capa de Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracion\FrmAdministrarCuentas.Designer.vb">
+      <DependentUpon>FrmAdministrarCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\FrmAdministrarCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\FrmBrindarPermisos.Designer.vb">
+      <DependentUpon>FrmBrindarPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\FrmBrindarPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\FrmMenuAdministracion.Designer.vb">
+      <DependentUpon>FrmMenuAdministracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\FrmMenuAdministracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\FrmRespaldoInfo.Designer.vb">
+      <DependentUpon>FrmRespaldoInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\FrmRespaldoInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaAceptar.Designer.vb">
+      <DependentUpon>AlertaAceptar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaAceptar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaAceptarCancelar.Designer.vb">
+      <DependentUpon>AlertaAceptarCancelar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaAceptarCancelar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaSuccess.Designer.vb">
+      <DependentUpon>AlertaSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaSiNo.Designer.vb">
+      <DependentUpon>AlertaSiNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaSiNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arqueo\FrmArqueo.Designer.vb">
+      <DependentUpon>FrmArqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arqueo\FrmArqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arqueo\FrmBilletaje.Designer.vb">
+      <DependentUpon>FrmBilletaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arqueo\FrmBilletaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmActProveedor.Designer.vb">
+      <DependentUpon>FrmActProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmActProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmActualizar.Designer.vb">
+      <DependentUpon>FrmActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmAgregarProveedor.Designer.vb">
+      <DependentUpon>FrmAgregarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmAgregarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmBuscarCompra.Designer.vb">
+      <DependentUpon>FrmBuscarCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmBuscarCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmInfoProveedor.Designer.vb">
+      <DependentUpon>FrmInfoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmInfoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmInsertar.Designer.vb">
+      <DependentUpon>FrmInsertar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmInsertar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\FrmMenuCompras.Designer.vb">
+      <DependentUpon>FrmMenuCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\FrmMenuCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmAgregarLaboratorio.Designer.vb">
+      <DependentUpon>FrmAgregarLaboratorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmAgregarLaboratorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmAgregarProducto.Designer.vb">
+      <DependentUpon>FrmAgregarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmAgregarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmBuscarProducto.Designer.vb">
+      <DependentUpon>FrmBuscarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmBuscarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmInfoProducto.Designer.vb">
+      <DependentUpon>FrmInfoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmInfoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmMenuInventario.Designer.vb">
+      <DependentUpon>FrmMenuInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmMenuInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmModificarProducto.Designer.vb">
+      <DependentUpon>FrmModificarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmModificarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\FrmUbicacionProducto.Designer.vb">
+      <DependentUpon>FrmUbicacionProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\FrmUbicacionProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulosVB\MdlAlerta.vb" />
+    <Compile Include="Configuración\FrmUsuarioActualizar.Designer.vb">
+      <DependentUpon>FrmUsuarioActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuración\FrmUsuarioActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuración\FrmUsuarioCambiarContra.Designer.vb">
+      <DependentUpon>FrmUsuarioCambiarContra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuración\FrmUsuarioCambiarContra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuración\FrmVerificarIdentidad.Designer.vb">
+      <DependentUpon>FrmVerificarIdentidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuración\FrmVerificarIdentidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuración\FrmVerInfo.Designer.vb">
+      <DependentUpon>FrmVerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuración\FrmVerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicioSesion.Designer.vb">
+      <DependentUpon>FrmInicioSesion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuración\FrmMenuConfiguración.Designer.vb">
+      <DependentUpon>FrmMenuConfiguración.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuración\FrmMenuConfiguración.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuModulos.Designer.vb">
+      <DependentUpon>FrmMenuModulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuModulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresentacion.Designer.vb">
+      <DependentUpon>FrmPresentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPresentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulosVB\MdlSalir.vb" />
+    <Compile Include="ModulosVB\VariablesGlobales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ventas\FormBuscarProducto.Designer.vb">
+      <DependentUpon>FormBuscarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FormBuscarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmCarrito.Designer.vb">
+      <DependentUpon>FrmCarrito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmCarrito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\FrmMenuVentas.Designer.vb">
+      <DependentUpon>FrmMenuVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FrmMenuVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administracion\FrmMenuAdministracion.resx">
+      <DependentUpon>FrmMenuAdministracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaAceptar.resx">
+      <DependentUpon>AlertaAceptar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaAceptarCancelar.resx">
+      <DependentUpon>AlertaAceptarCancelar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaSuccess.resx">
+      <DependentUpon>AlertaSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaSiNo.resx">
+      <DependentUpon>AlertaSiNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\FrmMenuCompras.resx">
+      <DependentUpon>FrmMenuCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuración\FrmUsuarioActualizar.resx">
+      <DependentUpon>FrmUsuarioActualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuración\FrmUsuarioCambiarContra.resx">
+      <DependentUpon>FrmUsuarioCambiarContra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuración\FrmVerificarIdentidad.resx">
+      <DependentUpon>FrmVerificarIdentidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuración\FrmVerInfo.resx">
+      <DependentUpon>FrmVerInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicioSesion.resx">
+      <DependentUpon>FrmInicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuración\FrmMenuConfiguración.resx">
+      <DependentUpon>FrmMenuConfiguración.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuModulos.resx">
+      <DependentUpon>FrmMenuModulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresentacion.resx">
+      <DependentUpon>FrmPresentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmAgregarProducto.resx">
+      <DependentUpon>FrmAgregarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\FrmMenuInventario.resx">
+      <DependentUpon>FrmMenuInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\FrmMenuVentas.resx">
+      <DependentUpon>FrmMenuVentas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Capa de Vistas_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visible30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuracion96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caja100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrador96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caja96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compra96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <Content Include="Logo_completo.ico" />
+    <None Include="Resources\icon_proveedor.png" />
+    <None Include="Resources\icon_agregarcompra.png" />
+    <None Include="Resources\icon_devcompra2.png" />
+    <None Include="Resources\icon_devcompra.png" />
+    <None Include="Resources\idon_compra.png" />
+    <None Include="Resources\icon_devolucion.png" />
+    <None Include="Resources\icon_carrito.png" />
+    <None Include="Resources\icon_venta.png" />
+    <None Include="Resources\icon_editproducto.png" />
+    <None Include="Resources\icon_newproducto.png" />
+    <None Include="Resources\icon_producto.png" />
+    <None Include="Resources\icon_propiedades.png" />
+    <None Include="Resources\icon_historial.png" />
+    <None Include="Resources\icon_respaldo.png" />
+    <None Include="Resources\icon_accesos.png" />
+    <None Include="Resources\icon_gastos.png" />
+    <None Include="Resources\icon_gastosvarios.png" />
+    <None Include="Resources\icon_usuario30.png" />
+    <None Include="Resources\icons8-reporte-de-negocios-96.png" />
+    <None Include="Resources\icon_home30.png" />
+    <None Include="Resources\IconUsuario.png" />
+    <None Include="Resources\icons8-agregar-recibo-48.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\columnas.png" />
+    <None Include="Resources\max.png" />
+    <None Include="Resources\fondoblanco.png" />
+    <None Include="Resources\Logo_fig.png" />
+    <None Include="Resources\Logo_comp.png" />
+    <None Include="Resources\min.png" />
+    <None Include="Resources\cerrar.png" />
+    <None Include="Resources\icons8-reporte-de-negocios-48 %281%29.png" />
+    <None Include="Resources\icons8-investment-128.png" />
+    <None Include="Resources\fondoApp1.png" />
+    <None Include="Resources\fondoApp.png" />
+    <None Include="Resources\maximizar30a1.png" />
+    <None Include="Resources\minimizar30a.png" />
+    <None Include="Resources\cerrar30a.png" />
+    <None Include="Resources\maximizar30a.png" />
+    <None Include="Resources\cerrar30.png" />
+    <None Include="Resources\cerrar16.png" />
+    <None Include="Resources\icons8-maximizar-la-ventana-30.png" />
+    <None Include="Resources\icono_info.png" />
+    <None Include="Resources\icono_error.png" />
+    <None Include="Resources\icono_correcto.png" />
+    <None Include="Resources\icono_pregunta.png" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa de Acceso a Datos\Capa de Acceso a Datos.vbproj">
+      <Project>{1372c5fb-593c-4f43-8c8a-ecc828eb801a}</Project>
+      <Name>Capa de Acceso a Datos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
